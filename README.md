@@ -11,5 +11,7 @@ Apart from the traditional approaches that used the K-Nearest Neighbor (KNN) sea
 System Requirements:
 
 Point Cloud Library (PCL)
+
 XLNT Excel Library(xlnt-duplicate-string-phonetic version)
+
 QT5 
