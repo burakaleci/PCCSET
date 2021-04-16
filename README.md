@@ -10,8 +10,44 @@ Apart from the traditional approaches that used the K-Nearest Neighbor (KNN) sea
 
 System Requirements:
 
-Point Cloud Library (PCL)
+- Point Cloud Library (PCL)
+- XLNT Excel Library(xlnt-duplicate-string-phonetic version)
+- QT5 
 
-XLNT Excel Library(xlnt-duplicate-string-phonetic version)
+How to run the tool:
 
-QT5 
+Firstly, you have to compile the XLNT library. To compile it:
+
+- Download the files from https://github.com/tfussell/xlnt/tree/duplicate-string-phonetic.
+- In XLNT files open a terminal and use these commands:
+
+`mkdir build`
+`cd build`
+`cmake ..`
+`make`
+
+- After using these commands, change these paths in project file's CMakeList.txt.
+
+`include_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/include)`
+`include_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/source)`
+`include_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/build/source)`
+`link_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/include)`
+`link_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/source)`
+`link_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/build/source)`
+
+- Also add this command and change the path:
+
+`target_link_libraries(${PROJECT_NAME} /home/fatih/Desktop/xlnt-duplicate-string-phonetic/build/source/libxlnt.so)`
+
+**Note:**  
+If you dont build the XLNT library, you can't find the "libxlnt.so".
+
+
+
+
+Download the files and use these commands in the project file:
+
+- mkdir build
+- cd build
+- cmake ..
+- make ..
