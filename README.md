@@ -28,16 +28,16 @@ In XLNT files open a terminal and use these commands:
 
 After using these commands, change these paths in project file's CMakeList.txt.
 
-- `include_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/include)`
-- `include_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/source)`
-- `include_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/build/source)`
-- `link_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/include)`
-- `link_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/source)`
-- `link_directories(/home/fatih/Desktop/xlnt-duplicate-string-phonetic/build/source)`
+- `include_directories({FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/include)`
+- `include_directories({FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/source)`
+- `include_directories({FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/build/source)`
+- `link_directories({FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/include)`
+- `link_directories({FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/source)`
+- `link_directories({FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/build/source)`
 
 Also add this command and change the path:
 
-- `target_link_libraries(${PROJECT_NAME} /home/fatih/Desktop/xlnt-duplicate-string-phonetic/build/source/libxlnt.so)`
+- `target_link_libraries(${PROJECT_NAME} {FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/build/source/libxlnt.so)`
 
 **Note:**  
 If you dont build the XLNT library, you can't find the "libxlnt.so".
@@ -49,7 +49,7 @@ Download the files and use these commands in the project file:
 - `cd build`
 - `cmake ..`
 - `make`
-- `./mainwindow`
+- Run executable.
 
 # How it works?
 
