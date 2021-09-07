@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PCCSET</class>
+ <widget class="QMainWindow" name="PCCSET">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1242</width>
+    <height>1001</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>6</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>POINT CLOUD CLASSIFICATION AND SEGMENTATION EVALUATION TOOL</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_5" columnstretch="5,5,0">
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="gtGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>461</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Ground Truth</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <property name="rightMargin">
+          <number>200</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="b_gtOpen">
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Open</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="document-open">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="b_gtClear">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Clear</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="edit-clear">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="b_gtUndo">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Undo</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="edit-undo">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="b_gtRedo">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Redo</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="edit-redo">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QPushButton" name="b_gtSave">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Save</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="document-save">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="7">
+          <widget class="QPushButton" name="b_gtExportAs">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Export As</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/export.png</normaloff>:/icons/export.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QPushButton" name="b_gtSaveAs">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Save As</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/saveas.png</normaloff>:/icons/saveas.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="8">
+          <widget class="QPushButton" name="b_gtColorize">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Select Color</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/color.png</normaloff>:/icons/color.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="sampleGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>471</width>
+          <height>69</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Test Sample</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="rightMargin">
+          <number>150</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="b_sampleClear">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Clear</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="edit-clear">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="b_sampleRedo">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Redo</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="edit-redo">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QPushButton" name="b_sampleSave">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Save</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="document-save">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="b_sampleUndo">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Undo</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="edit-undo">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="b_sampleOpen">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Open</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset theme="document-open">
+             <normaloff>.</normaloff>.</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="6">
+          <widget class="QPushButton" name="b_sampleSaveAs">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Save As</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/saveas.png</normaloff>:/icons/saveas.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="7">
+          <widget class="QPushButton" name="b_sampleExportAs">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Export As</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/export.png</normaloff>:/icons/export.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="8">
+          <widget class="QPushButton" name="b_sampleColorize">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Select Color</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/color.png</normaloff>:/icons/color.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="11">
+          <widget class="QPushButton" name="b_calculateMetrics">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Calculate Metrics</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/calculate.png</normaloff>:/icons/calculate.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="9">
+          <widget class="QPushButton" name="b_automaticPair">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Automatic Pair</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/auto.png</normaloff>:/icons/auto.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="10">
+          <widget class="QPushButton" name="b_manualPair">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Manual Pair</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/manual.png</normaloff>:/icons/manual.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="12">
+          <widget class="QPushButton" name="b_errorMap">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Error Map</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/errormap.png</normaloff>:/icons/errormap.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QGroupBox" name="infoGroupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>141</width>
+          <height>69</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>145</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>Info</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="b_excel">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="toolTip">
+            <string>Excel</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/excel.png</normaloff>:/icons/excel.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="b_snapshot">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>9</pointsize>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Snapshot</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/snapshot.png</normaloff>:/icons/snapshot.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="b_synchroniser">
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Synchoniser </string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/synchronization.png</normaloff>:/icons/synchronization.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="b_background">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>26</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>30</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Background</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="../src/icons.qrc">
+             <normaloff>:/icons/background.png</normaloff>:/icons/background.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QVTKWidget" name="widget_gt" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QVTKWidget" name="widget_sample" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QTextEdit" name="infoTextEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>750</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>145</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1242</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="m_file">
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="m_open">
+     <property name="toolTip">
+      <string>Open (Ctrl + O)</string>
+     </property>
+     <property name="toolTipDuration">
+      <number>2</number>
+     </property>
+     <property name="title">
+      <string>Open</string>
+     </property>
+     <property name="icon">
+      <iconset theme="folder-open">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+     <addaction name="m_gtOpen"/>
+     <addaction name="m_sampleOpen"/>
+    </widget>
+    <widget class="QMenu" name="m_save">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Save</string>
+     </property>
+     <property name="icon">
+      <iconset theme="document-save">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+     <addaction name="m_gtSave"/>
+     <addaction name="m_sampleSave"/>
+    </widget>
+    <widget class="QMenu" name="m_saveAs">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Save As</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../src/icons.qrc">
+       <normaloff>:/icons/saveas.png</normaloff>:/icons/saveas.png</iconset>
+     </property>
+     <addaction name="m_gtSaveAs"/>
+     <addaction name="m_sampleSaveAs"/>
+    </widget>
+    <widget class="QMenu" name="m_exportAs">
+     <property name="title">
+      <string>Export As</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../src/icons.qrc">
+       <normaloff>:/icons/export.png</normaloff>:/icons/export.png</iconset>
+     </property>
+     <addaction name="m_gtExportAs"/>
+     <addaction name="m_sampleExportAs"/>
+    </widget>
+    <addaction name="m_open"/>
+    <addaction name="m_save"/>
+    <addaction name="m_saveAs"/>
+    <addaction name="m_exportAs"/>
+    <addaction name="m_exit"/>
+   </widget>
+   <widget class="QMenu" name="m_edit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <widget class="QMenu" name="m_clear">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Clear</string>
+     </property>
+     <property name="icon">
+      <iconset theme="edit-clear">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+     <addaction name="m_gtClear"/>
+     <addaction name="m_sampleClear"/>
+    </widget>
+    <widget class="QMenu" name="m_undo">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Undo</string>
+     </property>
+     <property name="icon">
+      <iconset theme="edit-undo">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+     <addaction name="m_gtUndo"/>
+     <addaction name="m_sampleUndo"/>
+    </widget>
+    <widget class="QMenu" name="m_redo">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Redo</string>
+     </property>
+     <property name="icon">
+      <iconset theme="edit-redo">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+     <addaction name="m_gtRedo"/>
+     <addaction name="m_sampleRedo"/>
+    </widget>
+    <addaction name="m_clear"/>
+    <addaction name="m_undo"/>
+    <addaction name="m_redo"/>
+   </widget>
+   <widget class="QMenu" name="m_view">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="m_increasePointSize"/>
+    <addaction name="m_decreasePointSize"/>
+    <addaction name="m_resetPointSize"/>
+   </widget>
+   <widget class="QMenu" name="m_tools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <widget class="QMenu" name="m_colorize">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Colorize</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../src/icons.qrc">
+       <normaloff>:/icons/color.png</normaloff>:/icons/color.png</iconset>
+     </property>
+     <addaction name="m_gtColorize"/>
+     <addaction name="m_sampleColorize"/>
+    </widget>
+    <addaction name="m_background"/>
+    <addaction name="m_snapshot"/>
+    <addaction name="m_excel"/>
+    <addaction name="m_synchroniser"/>
+    <addaction name="m_colorize"/>
+   </widget>
+   <widget class="QMenu" name="m_evaluate">
+    <property name="title">
+     <string>Evalute</string>
+    </property>
+    <widget class="QMenu" name="m_segmentation">
+     <property name="title">
+      <string>Segmentation</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../src/icons.qrc">
+       <normaloff>:/icons/segmentation.png</normaloff>:/icons/segmentation.png</iconset>
+     </property>
+     <addaction name="m_automaticPair"/>
+     <addaction name="m_manualPair"/>
+     <addaction name="m_errorMapSegmentation"/>
+    </widget>
+    <widget class="QMenu" name="m_classification">
+     <property name="title">
+      <string>Classification</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../src/icons.qrc">
+       <normaloff>:/icons/class.png</normaloff>:/icons/class.png</iconset>
+     </property>
+     <addaction name="m_calculateMetrics"/>
+     <addaction name="m_errorMapClassification"/>
+    </widget>
+    <addaction name="m_classification"/>
+    <addaction name="m_segmentation"/>
+   </widget>
+   <addaction name="m_file"/>
+   <addaction name="m_edit"/>
+   <addaction name="m_view"/>
+   <addaction name="m_tools"/>
+   <addaction name="m_evaluate"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="m_gtOpen">
+   <property name="icon">
+    <iconset theme="folder-open">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Groundtruth</string>
+   </property>
+   <property name="toolTip">
+    <string>Open pcd file for ground truth screen.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="m_sampleOpen">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="folder-open">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Test Sample </string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+O</string>
+   </property>
+  </action>
+  <action name="m_gtSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="document-save">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Groundtruth</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="m_sampleSave">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="document-save">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Test Sample</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+S</string>
+   </property>
+  </action>
+  <action name="m_gtSaveAs">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/saveas.png</normaloff>:/icons/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Groundtruth</string>
+   </property>
+  </action>
+  <action name="m_sampleSaveAs">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/saveas.png</normaloff>:/icons/saveas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Test Sample</string>
+   </property>
+  </action>
+  <action name="m_exit">
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F4</string>
+   </property>
+  </action>
+  <action name="m_gtClear">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-clear">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Groundtruth</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="m_sampleClear">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-clear">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Test Sample</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+  <action name="m_gtUndo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-undo">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Groundtruth</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="m_sampleUndo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-undo">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Test Sample</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="m_gtRedo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-redo">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Groundtruth</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="m_sampleRedo">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="edit-redo">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Test Sample</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Y</string>
+   </property>
+  </action>
+  <action name="m_increasePointSize">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/increase.png</normaloff>:/icons/increase.png</iconset>
+   </property>
+   <property name="text">
+    <string>Increase Point Size</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="m_decreasePointSize">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/decrease.png</normaloff>:/icons/decrease.png</iconset>
+   </property>
+   <property name="text">
+    <string>Decrease Point Size</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="m_resetPointSize">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/reset.png</normaloff>:/icons/reset.png</iconset>
+   </property>
+   <property name="text">
+    <string>Reset Point Size</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="m_background">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/background.png</normaloff>:/icons/background.png</iconset>
+   </property>
+   <property name="text">
+    <string>Background</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="m_snapshot">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/snapshot.png</normaloff>:/icons/snapshot.png</iconset>
+   </property>
+   <property name="text">
+    <string>Snapshot</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+S</string>
+   </property>
+  </action>
+  <action name="m_excel">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/excel.png</normaloff>:/icons/excel.png</iconset>
+   </property>
+   <property name="text">
+    <string>Excel</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionMake_Pair">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Make Pair</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+N</string>
+   </property>
+  </action>
+  <action name="actionPerform_Initial_Pair">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Perform Initial Pair</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+P</string>
+   </property>
+  </action>
+  <action name="actionError_Map">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Error Map</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+E</string>
+   </property>
+  </action>
+  <action name="actionManual_Pair">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Manual Pair</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+M</string>
+   </property>
+  </action>
+  <action name="m_automaticPair">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/auto.png</normaloff>:/icons/auto.png</iconset>
+   </property>
+   <property name="text">
+    <string>Automatic Pair</string>
+   </property>
+  </action>
+  <action name="errorMapSegmentation">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Error Map</string>
+   </property>
+  </action>
+  <action name="manualPairSegmentation">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Manual Pair</string>
+   </property>
+  </action>
+  <action name="errorMapClassification">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Error Map</string>
+   </property>
+  </action>
+  <action name="manualPairClassification">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Manual Pair</string>
+   </property>
+  </action>
+  <action name="m_manualPair">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/manual.png</normaloff>:/icons/manual.png</iconset>
+   </property>
+   <property name="text">
+    <string>Manual pair</string>
+   </property>
+  </action>
+  <action name="m_errorMapSegmentation">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/errormap.png</normaloff>:/icons/errormap.png</iconset>
+   </property>
+   <property name="text">
+    <string>Error Map</string>
+   </property>
+  </action>
+  <action name="m_calculateMetrics">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/calculate.png</normaloff>:/icons/calculate.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calculate Metrics</string>
+   </property>
+  </action>
+  <action name="m_errorMapClassification">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/errormap.png</normaloff>:/icons/errormap.png</iconset>
+   </property>
+   <property name="text">
+    <string>Error Map</string>
+   </property>
+  </action>
+  <action name="m_gtColorize">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/color.png</normaloff>:/icons/color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ground truth</string>
+   </property>
+  </action>
+  <action name="m_sampleColorize">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/color.png</normaloff>:/icons/color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Test Sample</string>
+   </property>
+  </action>
+  <action name="m_gtExportAs">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/export.png</normaloff>:/icons/export.png</iconset>
+   </property>
+   <property name="text">
+    <string>Ground Truth</string>
+   </property>
+  </action>
+  <action name="m_sampleExportAs">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/export.png</normaloff>:/icons/export.png</iconset>
+   </property>
+   <property name="text">
+    <string>Test Sample</string>
+   </property>
+  </action>
+  <action name="m_synchroniser">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../src/icons.qrc">
+     <normaloff>:/icons/synchronization.png</normaloff>:/icons/synchronization.png</iconset>
+   </property>
+   <property name="text">
+    <string>Synchroniser</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">QVTKWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../src/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
