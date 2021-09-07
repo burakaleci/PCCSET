@@ -1,0 +1,23 @@
+<!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+     <file>icons/document.png</file>
+     <file>icons/edit.png</file>
+     <file>icons/increase.png</file>
+     <file>icons/decrease.png</file>
+     <file>icons/reset.png</file>
+     <file>icons/background.png</file>
+     <file>icons/snapshot.png</file>
+     <file>icons/color.png</file>
+     <file>icons/excel.png</file>
+     <file>icons/browse.png</file>
+     <file>icons/export.png</file>
+     <file>icons/saveas.png</file>
+     <file>icons/synchronization.png</file>
+     <file>icons/auto.png</file>
+     <file>icons/manual.png</file>
+     <file>icons/calculate.png</file>
+     <file>icons/errormap.png</file>
+     <file>icons/segmentation.png</file>
+     <file>icons/class.png</file>
+ </qresource>
+ </RCC>
