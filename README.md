@@ -6,6 +6,28 @@ In order to calculate metric and visual results, we handled classification and s
 
 Apart from the traditional approaches that used the K-Nearest Neighbor (KNN) search to retrieve a point via point coordinates, the indices of points were store in the set data structure to speed up the point cloud operations and use the memory efficiently.  A preprocessing step is required to place points in the same order for both ground truth and test sample. After that step, the points can be retrieved in a constant time through the indices. 
 
+# CITING PCCSET
+
+If you use PCCSET in a scientific publication, we would appreciate citations to the following paper:
+
+Kaleci, B. and Erdoğan, M. F. "A USER-FRIENDLY EVALUATION TOOL FOR POINT CLOUD CLASSIFICATION AND SEGMENTATION", 2nd International Hazar Scientific Researches Conference, pp. 835-852, Baku, Azerbaijan, 2021. 
+
+@inproceedings{Kaleci_Erdogan_2021,
+
+  title={A USER-FRIENDLY EVALUATION TOOL FOR POINT CLOUD CLASSIFICATION AND SEGMENTATION},
+
+  author={Kaleci, B. and Erdoğan, M. F.},
+
+  booktitle={2nd International Hazar Scientific Researches Conference},
+
+  year={2021},
+
+  month={April},
+
+  pages={835-852},
+
+}
+
 # INSTALLATION
 
 System Requirements:
