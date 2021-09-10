@@ -32,8 +32,9 @@ Kaleci, B. and Erdoğan, M. F. "A USER-FRIENDLY EVALUATION TOOL FOR POINT CLOUD 
 
 System Requirements:
 
-- Point Cloud Library (PCL)
-- VTK
+- Cmake >= 3.16
+- Point Cloud Library (PCL) >= 1.8
+- VTK >= 7.1
 - XLNT Excel Library(xlnt-duplicate-string-phonetic version)
 - QT5 
 
@@ -49,7 +50,18 @@ In XLNT files open a terminal and use these commands:
 - `cmake ..`
 - `make`
 
-After using these commands, change these paths in project file's CMakeList.txt.
+
+Download the files for PCCSET and use these commands in the project file:
+
+- `mkdir build`
+- `cd build`
+- `cmake ..`
+- `make`
+- Run executable.
+
+**Note:** To compile PCCSET, please use CMakeList.txt in project folder.
+
+Change the following paths according to location of XInt in project file's CMakeList.txt.
 
 - `include_directories({FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/include)`
 - `include_directories({FILE_DIRECTORY}/xlnt-duplicate-string-phonetic/source)`
@@ -61,14 +73,16 @@ After using these commands, change these paths in project file's CMakeList.txt.
 **Note:**  
 If you dont build the XLNT library, you can't find the "libxlnt.so".
 
+**Note:Unfortunately the tool is vtk dependent. Please modify vtk-x.x with your vtk version version** 
+target_link_libraries(${PROJECT_NAME} ${VTK_LIBRARIES} -lvtkGUISupportQt-x.x)
 
-Download the files and use these commands in the project file:
+**Note: if the following commands do not work**
 
-- `mkdir build`
-- `cd build`
-- `cmake ..`
-- `make`
-- Run executable.
+find_package(VTK REQUIRED)
+include(${VTK_USE_FILE})
+
+Explicitly set the header directory of QVTKWidget.h
+Explicitly set the library directory of libvtkGUISupportQt-x.x.so
 
 # How it works?
 
