@@ -79,6 +79,7 @@ target_link_libraries(${PROJECT_NAME} ${VTK_LIBRARIES} -lvtkGUISupportQt-x.x)
 **Note: if the following commands do not work**
 
 find_package(VTK REQUIRED)
+
 include(${VTK_USE_FILE})
 
 Explicitly set the header directory of QVTKWidget.h
