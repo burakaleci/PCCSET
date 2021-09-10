@@ -83,6 +83,7 @@ find_package(VTK REQUIRED)
 include(${VTK_USE_FILE})
 
 Explicitly set the header directory of QVTKWidget.h
+
 Explicitly set the library directory of libvtkGUISupportQt-x.x.so
 
 # How it works?
