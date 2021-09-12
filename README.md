@@ -87,6 +87,7 @@ Explicitly set the header directory of QVTKWidget.h
 Explicitly set the library directory of libvtkGUISupportQt-x.x.so
 
 # How it works?
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NNydPugppnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [![SC2 Video](https://img.youtube.com/vi/NNydPugppnA/0.jpg)](http://www.youtube.com/watch?v=NNydPugppnA)
 
