@@ -88,10 +88,6 @@ Explicitly set the library directory of libvtkGUISupportQt-x.x.so
 
 # How it works?
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=NNydPugppnA
-" target="_blank"><img src="http://img.youtube.com/vi/NNydPugppnA/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
-
 [![SC2 Video](https://img.youtube.com/vi/NNydPugppnA/0.jpg)](http://www.youtube.com/watch?v=NNydPugppnA)
 
 ### File Menu:
