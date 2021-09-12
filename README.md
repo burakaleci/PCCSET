@@ -88,6 +88,8 @@ Explicitly set the library directory of libvtkGUISupportQt-x.x.so
 
 # How it works?
 
+[![SC2 Video](https://img.youtube.com/vi/NNydPugppnA/0.jpg)](http://www.youtube.com/watch?v=NNydPugppnA)
+
 ### File Menu:
 
 There are 5 functions in the File menu. Open,save, save as, export as and exit. 
